@@ -1,0 +1,98 @@
+// .app__qanda {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 3rem;
+//   background-color: lightblue;
+//   padding: 2rem 0;
+//   flex-direction: column;
+// }
+// .app__qanda-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   padding: 0 11rem;
+// }
+// .app__qanda-question {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 0.5rem;
+//   background-color: var(--primary-color);
+//   width: 100%;
+//   &.active {
+//     background-color: var(--secondary-color);
+//   }
+//   svg {
+//     width: 30px;
+//     height: 30px;
+//     color: var(--white-color);
+//     transition: all 0.3s ease;
+//     &.active {
+//       transform: rotate(180deg);
+//     }
+//   }
+//   h2 {
+//     color: var(--white-color);
+//   }
+// }
+// .app__qanda-answer {
+//   background-color: lightgreen;
+//   opacity: 0;
+//   display: none;
+//   transition: all 0.3s ease;
+//   p {
+//     overflow: none;
+//   }
+//   &.active {
+//     display: block;
+
+//     opacity: 1;
+//   }
+// }
+
+// New Q and A Styling
+
+.wrapper {
+  margin: 4rem 0;
+  display: flex;
+  //   width: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.accordion {
+  width: 60%;
+  @media screen and(max-width:1050px) {
+    width: 70%;
+  }
+  @media screen and(max-width:700px) {
+    width: 90%;
+  }
+}
+.accordion-item {
+  background-color: #f0ebe1;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #85662b;
+
+    cursor: pointer;
+  }
+  .content {
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    &.show {
+      height: auto;
+      max-height: 9999px;
+      transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    }
+  }
+}

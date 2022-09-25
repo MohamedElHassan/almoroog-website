@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+
+:root {
+  --font-base: "Tajawal", sans-serif;
+
+  --primary-color: #fd0000;
+  --secondary-color: #ffde59;
+  --black-color: black;
+  --white-color: #fff;
+  --gray-color: rgb(223, 223, 223);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  /*For Arabic Website */
+  direction: rtl;
+}

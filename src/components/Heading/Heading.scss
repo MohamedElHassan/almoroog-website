@@ -1,0 +1,40 @@
+.app__heading {
+  margin: 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @media screen and(max-width:750px) {
+    margin: 9rem 2rem;
+  }
+}
+.app__heading-content {
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 900px) {
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 15px;
+    }
+  }
+}
