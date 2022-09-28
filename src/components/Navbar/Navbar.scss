@@ -31,10 +31,10 @@
     a {
       font-size: 20px;
       text-decoration: none;
-      color: var(--secondary-color);
+      color: var(--white-color);
       transition: all 0.3s ease-in-out;
       &:hover {
-        color: var(--white-color);
+        color: var(--secondary-color);
       }
     }
   }
@@ -106,10 +106,10 @@
   a {
     font-size: 22px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--white-color);
     transition: all 0.3s ease-in-out;
     &:hover {
-      color: var(--white-color);
+      color: var(--secondary-color);
     }
   }
 }

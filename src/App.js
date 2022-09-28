@@ -1,28 +1,21 @@
 import React from "react";
-import { Navbar, Heading, Cards, QandA } from "./components";
-import { Footer, Header, Services } from "./container";
+import { Heading, Cards, QandA } from "./components";
+import { Header, Services } from "./container";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion } from "framer-motion";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
-import CargoPage from "./pages/CargoPage";
-import ServicesPage from "./pages/ServicesPage";
-import WhoWeArePage from "./pages/WhoWeArePage";
-// import HomePage from "./pages/HomePage";
+import { WhoWeAre, ServicesPage, ContactUs } from "./pages";
 import Layout from "./pages/Layout";
+
+// Created By Muhammad El Hassan @2022 All rights reserved
+// Github Account : https://github.com/MohamedElHassan
+// LinkedIn Account : https://www.linkedin.com/in/muhammad-el-hassan-463374214/
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
-      <Header />
-      <Heading />
-      <Cards />
-      <QandA />
-      <Services />
-      <Footer />
-
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route
             index
@@ -36,9 +29,9 @@ const App = () => {
               </>
             }
           />
-          <Route path="/cargo" element={<CargoPage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/who-we-are" element={<WhoWeArePage />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
         </Route>
         <Route
           path="*"
@@ -46,7 +39,7 @@ const App = () => {
             <h1 style={{ height: "80vh" }}>Error 404, Page Not Found</h1>
           }
         />
-      </Routes> */}
+      </Routes>
 
       <motion.a
         className="whatsapp-btn"

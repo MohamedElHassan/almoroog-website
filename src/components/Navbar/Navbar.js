@@ -6,15 +6,15 @@ import images from "../../images";
 
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-// "الرئيسية", "الشحن", "الخدمات", "من نحن"
+// "الرئيسية", "تواصل معنا", "الخدمات", "من نحن"
 const menu = [
   {
     name: "الرئيسية",
     link: "/",
   },
   {
-    name: "الشحن",
-    link: "/cargo",
+    name: "تواصل معنا",
+    link: "/contact-us",
   },
   {
     name: "الخدمات",
@@ -55,10 +55,7 @@ const Navbar = () => {
             {/* <GrClose onClick={() => setToggleMenu(false)} /> */}
             {menu.map((item, index) => (
               <div key={index} className="app__navbar-menu-item">
-                <Link
-                  onClick={() => setToggleMenu(false)}
-                  to={item.link}
-                >
+                <Link onClick={() => setToggleMenu(false)} to={item.link}>
                   {item.name}
                 </Link>
               </div>

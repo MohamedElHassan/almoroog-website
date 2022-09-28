@@ -18,8 +18,8 @@ const menu = [
     link: "/",
   },
   {
-    name: "الشحن",
-    link: "/cargo",
+    name: "تواصل معنا",
+    link: "/contact-us",
   },
   {
     name: "الخدمات",
