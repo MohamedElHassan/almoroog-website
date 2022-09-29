@@ -13,16 +13,16 @@ const menu = [
     link: "/",
   },
   {
-    name: "تواصل معنا",
-    link: "/contact-us",
-  },
-  {
     name: "الخدمات",
     link: "/services",
   },
   {
     name: "من نحن",
     link: "/who-we-are",
+  },
+  {
+    name: "تواصل معنا",
+    link: "/contact-us",
   },
 ];
 
@@ -40,6 +40,7 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+      {/* Menu for Navigation Bar */}
       <div className="app__navbar-menu">
         {toggleMenu ? (
           ""

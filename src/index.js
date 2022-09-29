@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
@@ -8,10 +9,18 @@ import "./index.css";
 // Github Account : https://github.com/MohamedElHassan
 // LinkedIn Account : https://www.linkedin.com/in/muhammad-el-hassan-463374214/
 
+const container = document.getElementById("root");
 
-ReactDOM.render(
+const root = createRoot(container);
+
+root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );
+// render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>,
+//   container
+// );

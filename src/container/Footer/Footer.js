@@ -18,16 +18,16 @@ const menu = [
     link: "/",
   },
   {
-    name: "تواصل معنا",
-    link: "/contact-us",
-  },
-  {
     name: "الخدمات",
     link: "/services",
   },
   {
     name: "من نحن",
     link: "/who-we-are",
+  },
+  {
+    name: "تواصل معنا",
+    link: "/contact-us",
   },
 ];
 const Footer = () => {

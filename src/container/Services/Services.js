@@ -53,7 +53,7 @@ const Services = () => {
             />
           </div>
           <div className="feature-img">
-            <img src={images.card5} alt="feature-img" />
+            <img src={images.vertical3} alt="feature-img" />
           </div>
         </div>
       </div>

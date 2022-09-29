@@ -1,12 +1,7 @@
 import React from "react";
 import HeroSlider, { Slide, Overlay } from "hero-slider";
 import { AppWrapper } from "../../wrapper";
-import movingHouse from "../../assets/movingHouse.png";
-import movingHouse2 from "../../assets/movingHouse2.png";
-import movingHouse3 from "../../assets/movingHouse3.png";
-import movingHouse4 from "../../assets/movingHouse4.png";
-import movingHouse5 from "../../assets/movingHouse5.png";
-
+import images from "../../images";
 import "./Header.scss";
 
 const Header = () => {
@@ -35,7 +30,7 @@ const Header = () => {
         height={"100vh"}
         autoplay={{
           autoplayDuration: 2000,
-          autoplayDebounce:0,
+          autoplayDebounce: 0,
         }}
         controller={{
           initialSlide: 1,
@@ -63,31 +58,31 @@ const Header = () => {
         </Overlay>
         <Slide
           background={{
-            backgroundImage: movingHouse,
+            backgroundImage: images.movingHouse,
             backgroundAttachment: "fixed",
           }}
         />
         <Slide
           background={{
-            backgroundImage: movingHouse2,
+            backgroundImage: images.movingHouse2,
             backgroundAttachment: "fixed",
           }}
         />
         <Slide
           background={{
-            backgroundImage: movingHouse3,
+            backgroundImage: images.horizontal8,
             backgroundAttachment: "fixed",
           }}
         />
         <Slide
           background={{
-            backgroundImage: movingHouse4,
+            backgroundImage: images.movingHouse4,
             backgroundAttachment: "fixed",
           }}
         />
         <Slide
           background={{
-            backgroundImage: movingHouse5,
+            backgroundImage: images.horizontal9,
             backgroundAttachment: "fixed",
           }}
         />

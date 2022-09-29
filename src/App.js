@@ -3,11 +3,11 @@ import { Heading, Cards, QandA } from "./components";
 import { Header, Services } from "./container";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion } from "framer-motion";
-import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { WhoWeAre, ServicesPage, ContactUs } from "./pages";
 import Layout from "./pages/Layout";
 
+import "./App.scss";
 // Created By Muhammad El Hassan @2022 All rights reserved
 // Github Account : https://github.com/MohamedElHassan
 // LinkedIn Account : https://www.linkedin.com/in/muhammad-el-hassan-463374214/

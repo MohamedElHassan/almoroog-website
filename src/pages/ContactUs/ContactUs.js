@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { AppWrapper } from "../../wrapper";
 import "./ContactUs.scss";
 
-const ContactUsPage = () => {
+const ContactUs = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,12 +22,13 @@ const ContactUsPage = () => {
         },
         (error) => {
           console.log(error.text);
+          alert("يوجد خطأ في إرسال الرسالة, حاول في وقت لاحق");
         }
       );
     e.target.reset();
   };
   return (
-    <div className="app__contact-us section__padding">
+    <div className="app__contact-us section__padding section__margin">
       <h1 className="page-title">تواصل معنا</h1>
       <div className="app__contact-us-container">
         <div className="app__contact-us-form">
@@ -70,4 +71,4 @@ const ContactUsPage = () => {
   );
 };
 
-export default ContactUsPage;
+export default AppWrapper(ContactUs);
