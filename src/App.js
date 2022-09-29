@@ -4,7 +4,7 @@ import { Header, Services } from "./container";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import { WhoWeAre, ServicesPage, ContactUs } from "./pages";
+import { WhoWeAre, ServicesPage, ContactUs, ErrorPage } from "./pages";
 import Layout from "./pages/Layout";
 
 import "./App.scss";
@@ -33,12 +33,7 @@ const App = () => {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
         </Route>
-        <Route
-          path="*"
-          element={
-            <h1 style={{ height: "80vh" }}>Error 404, Page Not Found</h1>
-          }
-        />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
 
       <motion.a

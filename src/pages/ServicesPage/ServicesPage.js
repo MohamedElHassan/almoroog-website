@@ -10,9 +10,9 @@ const ServicesPage = () => {
     <div className="section__padding section__margin">
       <h2 className="page-title">الخدمات</h2>
 
-      <div className="app__services">
-        <div className="app__services-section1">
-          <div className="app__services-content">
+      <div className="app__services-page">
+        <div className="app__services-page-section1">
+          <div className="app__services-page-content">
             <Feature
               number="1"
               title="خدمات حصرية مميزة"
@@ -34,8 +34,8 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        <div className="app__services-section2">
-          <div className="app__services-content">
+        <div className="app__services-page-section2">
+          <div className="app__services-page-content">
             <Feature
               number="4"
               title="خدمات حصرية مميزة"
@@ -53,7 +53,7 @@ const ServicesPage = () => {
             />
           </div>
           <div className="feature-img">
-            <img src={images.vertical2} alt="feature-img" />
+            <img className="contain-img" src={images.vertical2} alt="feature-img" />
           </div>
         </div>
       </div>
