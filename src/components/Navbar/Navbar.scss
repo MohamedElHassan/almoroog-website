@@ -6,7 +6,7 @@
   padding: 0.5rem 5rem;
   // 550px
   @media screen and(max-width:600px) {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3.3rem;
   }
 }
 .app__navbar-logo {
@@ -71,10 +71,11 @@
   svg {
     width: 25px;
     height: 25px;
+    color: var(--white-color);
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: var(--white-color);
+      color: var(--secondary-color);
     }
   }
 }
@@ -90,26 +91,53 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
-  svg {
+  padding: 4rem 4rem 17rem;
+
+  @media screen and (max-width: 450px) {
+    padding-left: 2rem;
+  }
+
+  .app__navbar-menu-btn {
+    cursor: pointer;
+    padding-left: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      color: var(--white-color);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    // @media screen and (max-width: 800px) {
+    //   padding-left: 20rem;
+    // }
+    // @media screen and (max-width: 550px) {
+    //   padding-left: 15rem;
+    // }
   }
 }
-.app__navbar-menu-item {
-  cursor: pointer;
-  margin: 1rem;
+.app__navbar-menu-items {
+  .app__navbar-menu-item {
+    cursor: pointer;
+    margin: 2.5rem;
 
-  a {
-    font-size: 22px;
-    text-decoration: none;
-    color: var(--white-color);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      color: var(--secondary-color);
+    a {
+      font-size: 22px;
+      text-decoration: none;
+      color: var(--white-color);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--secondary-color);
+      }
     }
   }
 }

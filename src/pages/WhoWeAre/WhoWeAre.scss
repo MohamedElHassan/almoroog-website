@@ -12,6 +12,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and(max-width:950px) {
+    margin-bottom: 2rem;
+  }
+  @media screen and(max-width:800px) {
+    flex-direction: column;
+  }
 }
 
 .app__whoweare-section2 {
@@ -19,12 +26,23 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and(max-width:950px) {
+    margin-bottom: 2rem;
+  }
+  @media screen and(max-width:800px) {
+    flex-direction: column;
+  }
 }
 .app__whoweare-section3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and(max-width:800px) {
+    flex-direction: column;
+  }
 }
 
 .app__whoweare-section1-img,
@@ -37,6 +55,12 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    @media screen and(max-width:650px) {
+      object-fit: contain;
+    }
+  }
+  @media screen and(max-width:800px) {
+    width: 100%;
   }
 }
 
@@ -58,9 +82,18 @@
       background-color: var(--secondary-color);
       bottom: -10px;
     }
+    @media screen and(max-width:800px) {
+      margin-top: 1.5rem;
+    }
+    @media screen and (max-width: 550px) {
+      margin-top: -3rem;
+    }
   }
   p {
     line-height: 30px;
     font-size: 18px;
+  }
+  @media screen and(max-width:800px) {
+    width: 100%;
   }
 }

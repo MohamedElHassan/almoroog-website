@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { HiX } from "react-icons/hi";
 // import { GrClose } from "react-icons/gr";
 import images from "../../images";
 
@@ -30,9 +31,9 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="app__navbar">
-      <div className="app__navbar-logo">
+      <Link to="/" className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
-      </div>
+      </Link>
       <div className="app__navbar-list">
         {menu.map((item, index) => (
           <div key={index} className="app__navbar-item">
@@ -53,14 +54,19 @@ const Navbar = () => {
             whileInView={{ x: [-300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
-            {/* <GrClose onClick={() => setToggleMenu(false)} /> */}
-            {menu.map((item, index) => (
-              <div key={index} className="app__navbar-menu-item">
-                <Link onClick={() => setToggleMenu(false)} to={item.link}>
-                  {item.name}
-                </Link>
-              </div>
-            ))}
+            <div className="app__navbar-menu-btn">
+              <HiX onClick={() => setToggleMenu(false)} />
+            </div>
+
+            <div className="app__navbar-menu-items">
+              {menu.map((item, index) => (
+                <div key={index} className="app__navbar-menu-item">
+                  <Link onClick={() => setToggleMenu(false)} to={item.link}>
+                    {item.name}
+                  </Link>
+                </div>
+              ))}
+            </div>
           </motion.div>
         )}
       </div>

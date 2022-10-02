@@ -1,13 +1,12 @@
 import React from "react";
-import { Heading, Cards, QandA } from "./components";
+import { Heading, Cards, QandA, ScrollToTopBtn, WhatsAppBtn } from "./components";
 import { Header, Services } from "./container";
-import { BsWhatsapp } from "react-icons/bs";
-import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
 import { WhoWeAre, ServicesPage, ContactUs, ErrorPage } from "./pages";
 import Layout from "./pages/Layout";
 
 import "./App.scss";
+
 // Created By Muhammad El Hassan @2022 All rights reserved
 // Github Account : https://github.com/MohamedElHassan
 // LinkedIn Account : https://www.linkedin.com/in/muhammad-el-hassan-463374214/
@@ -36,12 +35,8 @@ const App = () => {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
 
-      <motion.a
-        className="whatsapp-btn"
-        href="https://api.whatsapp.com/send?phone=+971582881365"
-      >
-        <BsWhatsapp />
-      </motion.a>
+      <WhatsAppBtn />
+      <ScrollToTopBtn />
     </div>
   );
 };

@@ -29,7 +29,7 @@ const Header = () => {
         // }}
         height={"100vh"}
         autoplay={{
-          autoplayDuration: 2000,
+          autoplayDuration: 3000,
           autoplayDebounce: 0,
         }}
         controller={{

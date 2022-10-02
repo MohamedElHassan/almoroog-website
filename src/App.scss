@@ -1,31 +1,7 @@
 .app {
   font-family: var(--font-base);
 }
-.whatsapp-btn {
-  z-index: 999;
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  background-color: #00e676;
-  bottom: 35px;
-  right: 30px;
-  border-radius: 50%;
-  border: 3px solid var(--white-color);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: all 0.3s ease;
-  svg {
-    width: 35px;
-    height: 35px;
-    color: var(--white-color);
-  }
-  &:hover {
-    transform: scale(1.1);
-  }
-}
 .section__heading {
   width: 100%;
   margin: auto;
@@ -62,6 +38,9 @@
 .section__padding {
   // margin-top: 2rem;
   padding: 2rem 4rem;
+  @media screen and(max-width:600px) {
+    padding: 1rem 1rem;
+  }
 }
 .section__margin {
   margin: 2rem 0;

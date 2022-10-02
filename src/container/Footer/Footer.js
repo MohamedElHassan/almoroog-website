@@ -31,6 +31,12 @@ const menu = [
   },
 ];
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="app__footer">
       <div className="app__footer-contact">
@@ -39,13 +45,13 @@ const Footer = () => {
           <a href="https://www.facebook.com/">
             <BsFacebook />
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.twitter.com/">
             <BsTwitter />
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.instagram.com/">
             <BsInstagram />
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.linkedin.com/">
             <BsLinkedin />
           </a>
         </div>
@@ -62,7 +68,9 @@ const Footer = () => {
         <h2>روابط قد تهمك</h2>
         {menu.map((item, index) => (
           <div key={index} className="app__footer-item">
-            <Link to={item.link}>{item.name}</Link>
+            <Link onClick={scrollToTop} to={item.link}>
+              {item.name}
+            </Link>
           </div>
         ))}
       </div>
