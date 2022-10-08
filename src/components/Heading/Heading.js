@@ -7,7 +7,7 @@ const Heading = () => {
   return (
     <div className="app__heading">
       <div className="app__heading-content">
-        <h2 className="app__heading-head">خدمات راقية</h2>
+        <h2 className="app__heading-head">خدمات راقية الفرع الأول</h2>
         <p>
           هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
           القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة
