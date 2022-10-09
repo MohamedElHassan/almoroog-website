@@ -5,6 +5,7 @@ import "./Heading.scss";
 
 const Heading = () => {
   return (
+    
     <div className="app__heading">
       <div className="app__heading-content">
         <h2 className="app__heading-head">خدمات راقية</h2>

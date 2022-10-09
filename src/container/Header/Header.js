@@ -3,6 +3,7 @@ import HeroSlider, { Slide, Overlay } from "hero-slider";
 import { AppWrapper } from "../../wrapper";
 import images from "../../images";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -50,9 +51,15 @@ const Header = () => {
       >
         <Overlay>
           <div className="overlay-content">
-            <h1>شركة المروج للشحن</h1>
-            <div className="contact-btn">
-              <a href="tel:+971582881365">إتصل بنا الاَن</a>
+            <h1> نُعطي للأشياء قيمة حقيقية.</h1>
+            <p>
+              نشحن أشياء لا تعقل، لكنها تتذكر قصة أصحابها جيدًا، قصة العناء،
+              الشقاء، الغربة، لذلك نُعطي لأشيائك قيمة حقيقية عن طريق الأعتناء
+              بها أكثر مما ينبغي، لتصل لأحبائك كما تحب أن يراوها.
+            </p>
+            <div className="contact-btns">
+              <a href="tel:+971582881365">أحجز موعد</a>
+              <Link to="/services">تصفح خدماتنا</Link>
             </div>
           </div>
         </Overlay>

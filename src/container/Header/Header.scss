@@ -1,41 +1,99 @@
 .overlay-content {
-  margin-top: 15rem;
-  text-align: center;
+  background-color: rgba(51, 51, 51, 0.404);
+  padding: 12rem 11rem;
+  height: 100vh;
+  text-align: right;
   display: flex;
   flex-direction: column;
   gap: 30px;
   h1 {
-    color: var(--white-color);
-    font-size: 60px;
-    @media screen and(max-width:600px) {
-      font-size: 50px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 75px;
+    font-size: 48px;
+
+    @media screen and(max-width:800px) {
+      font-size: 44px;
+      line-height: 62px;
     }
     @media screen and(max-width:450px) {
-      font-size: 40px;
-    }
-    @media screen and(max-width:383px) {
-      font-size: 33px;
+      font-size: 36px;
+      line-height: 48px;
     }
   }
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+
+    @media screen and(max-width:800px) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    @media screen and(max-width:450px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  @media screen and(max-width:800px) {
+    padding: 12rem 2rem;
+  }
+}
+
+.contact-btns {
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   a {
-    font-size: 18px;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 194px;
+    height: 62px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0.5rem;
     text-decoration: none;
-    color: var(--white-color);
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    border: 2px solid var(--primary-color);
+    color: var(--black-color);
+    background-color: #e71111;
+    border-radius: 9px;
+    border: 2px solid #e71111;
     transition: all 0.3s ease;
     &:hover {
       background-color: transparent;
       color: var(--secondary-color);
     }
-    @media screen and(max-width:600px) {
-      padding: 0.5rem 1rem;
+  }
+  a:last-of-type {
+    margin-right: 2rem;
+    background-color: transparent;
+    color: var(--black-color);
+    &:hover {
+      background-color: #e71111;
+      color: var(--secondary-color);
     }
-    @media screen and(max-width:450px) {
-      padding: 0.3rem 0.8rem;
+  }
+  @media screen and(max-width:800px) {
+    flex-direction: column;
+    a {
+      width: 170px;
+      height: 62px;
+      font-size: 19px;
+    }
+    a:last-of-type {
+      margin-right: 0;
+    }
+  }
+  @media screen and(max-width:450px) {
+    a {
+      width: 145px;
+      height: 45px;
+      font-size: 19px;
     }
   }
 }
