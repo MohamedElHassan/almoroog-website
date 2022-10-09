@@ -40,6 +40,17 @@ const Navbar = () => {
             <Link to={item.link}>{item.name}</Link>
           </div>
         ))}
+        <a
+        className="app__navbar-blog"
+          href="https://blog.almoroojcargo.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          المدونة
+        </a>
+        <a className="app__navbar-btn" href="#">
+          تتبع شحنتك
+        </a>
       </div>
       {/* Menu for Navigation Bar */}
       <div className="app__navbar-menu">
