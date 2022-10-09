@@ -25,19 +25,21 @@
   .item-content {
     position: absolute;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
     padding: 5rem 2rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 1rem;
     width: 92%;
     h2 {
-      font-size: 34px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 75px;
     }
     p {
       margin-top: 1rem;
-      color: var(--white-color);
+      color: var(--secondary-color);
     }
   }
   @media screen and(max-width:700px) {

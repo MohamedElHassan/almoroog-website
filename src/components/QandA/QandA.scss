@@ -71,21 +71,31 @@
   }
 }
 .accordion-item {
-  background-color: #f0ebe1;
+  border: 1px solid var(--primary-color);
+  background-color: var(--white-color);
   margin-bottom: 5px;
   padding: 10px 20px;
   border-radius: 0.5rem;
   .title {
+    background-color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    color: #85662b;
+    color: var(--primary-color);
 
     cursor: pointer;
+    // h2 {
+    //   font-weight: 700;
+    //   font-size: 36px;
+    //   line-height: 56px;
+    // }
   }
   .content {
-    color: #8b7f75;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 38px;
+    color: #866014;
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);

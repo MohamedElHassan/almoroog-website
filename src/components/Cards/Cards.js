@@ -4,6 +4,39 @@ import { AppWrapper } from "../../wrapper";
 import images from "./cardsImages";
 import "./Cards.scss";
 
+const cardsData = [
+  {
+    image: images.card1,
+    title: " شحن سريع",
+    content:
+      " العدي لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)د",
+  },
+  {
+    image: images.card2,
+    title: " شحن سريع",
+    content:
+      " العدي لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)د",
+  },
+  {
+    image: images.card3,
+    title: " شحن سريع",
+    content:
+      " العدي لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)د",
+  },
+  {
+    image: images.card4,
+    title: " شحن سريع",
+    content:
+      " العدي لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)د",
+  },
+  {
+    image: images.card5,
+    title: " شحن سريع",
+    content:
+      " العدي لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)د",
+  },
+];
+
 const Cards = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
@@ -28,17 +61,14 @@ const Cards = () => {
           dragConstraints={{ left: 0, right: width }}
           className="inner-carousel"
         >
-          {images.map((image) => {
+          {cardsData.map((card) => {
             return (
-              <motion.div className="item" key={image}>
+              <motion.div className="item" key={card.title}>
                 <div className="item-content">
-                  <h2>شحن سريع</h2>
-                  <p>
-                    لى الشكل الخارجيرأها. ولذلكياَ - فتجعلها تبدو (أي الأحرف)
-                    وكأنها نص مقروء. العديد
-                  </p>
+                  <h2>{card.title}</h2>
+                  <p>{card.content}</p>
                 </div>
-                <img src={image} alt={image} />
+                <img src={card.image} alt={card.title} />
               </motion.div>
             );
           })}
