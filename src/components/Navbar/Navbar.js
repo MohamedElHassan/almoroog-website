@@ -28,7 +28,12 @@ const menu = [
 ];
 
 const Navbar = () => {
+  const [activePage, setActivePage] = useState(1);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleClick = (index) => {
+    setActivePage(index);
+  }
   return (
     <div className="app__navbar">
       <Link to="/" className="app__navbar-logo">
@@ -37,12 +42,12 @@ const Navbar = () => {
       <div className="app__navbar-list">
         {menu.map((item, index) => (
           <div key={index} className="app__navbar-item">
-            <Link to={item.link}>{item.name}</Link>
+            <Link className={activePage === index ? 'active': ''} onClick={() => handleClick(index)} to={item.link}>{item.name}</Link>
           </div>
         ))}
         <a
-        className="app__navbar-blog"
-          href="https://blog.almoroojcargo.com/"
+          className="app__navbar-blog"
+          href="https://almoroojcargo.com/blog"
           target="_blank"
           rel="noreferrer"
         >
@@ -72,11 +77,22 @@ const Navbar = () => {
             <div className="app__navbar-menu-items">
               {menu.map((item, index) => (
                 <div key={index} className="app__navbar-menu-item">
-                  <Link onClick={() => setToggleMenu(false)} to={item.link}>
+                  <Link className={activePage === index ? 'active': ''} onClick={() => {handleClick(index); setToggleMenu(false)}} to={item.link}>
                     {item.name}
                   </Link>
                 </div>
               ))}
+              <a
+                className="app__navbar-blog"
+                href="https://almoroojcargo.com/blog"
+                target="_blank"
+                rel="noreferrer"
+              >
+                المدونة
+              </a>
+              <a className="app__navbar-btn" href="#">
+                تتبع شحنتك
+              </a>
             </div>
           </motion.div>
         )}

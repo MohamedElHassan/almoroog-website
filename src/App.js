@@ -1,6 +1,16 @@
 import React from "react";
-import { Heading, Cards, QandA, ScrollToTopBtn, WhatsAppBtn } from "./components";
-import { Header, Services } from "./container";
+import {
+  Heading,
+  Cards,
+  QandA,
+  ScrollToTopBtn,
+  WhatsAppBtn,
+  Pros,
+  Sec1,
+  ContactForm,
+  Prices,
+} from "./components";
+import { Header, Services, Services2 } from "./container";
 import { Route, Routes } from "react-router-dom";
 import { WhoWeAre, ServicesPage, ContactUs, ErrorPage } from "./pages";
 import Layout from "./pages/Layout";
@@ -21,10 +31,15 @@ const App = () => {
             element={
               <>
                 <Header />
-                <Heading />
+                <Pros />
+                {/* <Heading /> */}
+                <Services2 />
+                <Sec1 />
                 <Cards />
                 <QandA />
-                <Services />
+                <Prices />
+                <ContactForm />
+                {/* <Services /> */}
               </>
             }
           />
