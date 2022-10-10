@@ -33,7 +33,7 @@ const menu = [
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
+      top: 110,
       behavior: "smooth",
     });
   };
@@ -73,6 +73,14 @@ const Footer = () => {
             </Link>
           </div>
         ))}
+        <a
+          className="app__navbar-blog"
+          href="https://almoroojcargo.com/blog"
+          target="_blank"
+          rel="noreferrer"
+        >
+          المدونة
+        </a>
       </div>
       <div className="app__footer-about">
         <h2>عن الشركة</h2>

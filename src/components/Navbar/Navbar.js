@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiX } from "react-icons/hi";
-// import { GrClose } from "react-icons/gr";
-import images from "../../images";
-
-import "./Navbar.scss";
 import { Link } from "react-router-dom";
+// import { GrClose } from "react-icons/gr";
+
+import images from "../../images";
+import "./Navbar.scss";
 // "الرئيسية", "تواصل معنا", "الخدمات", "من نحن"
 const menu = [
   {
