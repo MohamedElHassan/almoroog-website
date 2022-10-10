@@ -22,6 +22,7 @@
     }
   }
   p {
+    color: var(--white-color);
     font-weight: 700;
     font-size: 24px;
     line-height: 38px;
@@ -59,7 +60,7 @@
     text-align: center;
     margin-top: 0.5rem;
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--white-color);
     background-color: #e71111;
     border-radius: 9px;
     border: 2px solid #e71111;
@@ -72,7 +73,7 @@
   a:last-of-type {
     margin-right: 2rem;
     background-color: transparent;
-    color: var(--black-color);
+    color: var(--white-color);
     &:hover {
       background-color: #e71111;
       color: var(--secondary-color);

@@ -2,8 +2,8 @@ import React from "react";
 import HeroSlider, { Slide, Overlay } from "hero-slider";
 import { AppWrapper } from "../../wrapper";
 import images from "../../images";
-import "./Header.scss";
 import { Link } from "react-router-dom";
+import "./Header.scss";
 
 const Header = () => {
   return (

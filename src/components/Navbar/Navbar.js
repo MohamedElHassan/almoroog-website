@@ -28,7 +28,7 @@ const menu = [
 ];
 
 const Navbar = () => {
-  const [activePage, setActivePage] = useState(1);
+  const [activePage, setActivePage] = useState(0);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleClick = (index) => {
