@@ -2,6 +2,12 @@
   margin: 2rem 4rem;
   overflow: hidden;
   cursor: grab;
+  @media screen and(max-width:700px) {
+    margin: 2rem 2rem;
+  }
+  @media screen and(max-width:400px) {
+    margin: 2rem 0rem;
+  }
 }
 .inner-carousel {
   display: flex;
@@ -32,6 +38,7 @@
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 1rem;
     width: 92%;
+    height: 80%;
     h2 {
       font-weight: 700;
       font-size: 48px;
@@ -39,27 +46,41 @@
     }
     p {
       margin-top: 1rem;
-      color: var(--secondary-color);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 31px;
     }
   }
   @media screen and(max-width:700px) {
-    min-height: 28rem;
+    min-height: 34rem;
     min-width: 18rem;
     .item-content {
       width: 89%;
-    }
-  }
-  @media screen and(max-width:400px) {
-    min-height: 24rem;
-    min-width: 14rem;
-    .item-content {
-      width: 86%;
-      height: 92%;
       h2 {
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 42px;
       }
       p {
         font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  @media screen and(max-width:400px) {
+    min-height: 34rem;
+
+    min-width: 14rem;
+    .item-content {
+      padding: 1rem 1rem;
+      width: 86%;
+      height: 92%;
+      h2 {
+        font-size: 26px;
+        line-height: 32px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
       }
     }
   }

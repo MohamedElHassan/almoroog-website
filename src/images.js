@@ -6,6 +6,7 @@ import card2 from "./assets/card2.jpg";
 import card3 from "./assets/card3.jpg";
 import card4 from "./assets/card4.jpg";
 import card5 from "./assets/card5.jpg";
+import card6 from "./assets/card6.jpg";
 import movingHouse from "./assets/movingHouse.png";
 import movingHouse2 from "./assets/movingHouse2.png";
 import movingHouse3 from "./assets/movingHouse3.png";
@@ -43,6 +44,7 @@ export default {
   card3,
   card4,
   card5,
+  card6,
   movingHouse,
   movingHouse2,
   movingHouse3,
