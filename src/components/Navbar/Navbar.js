@@ -36,7 +36,7 @@ const Navbar = () => {
   }
   return (
     <div className="app__navbar">
-      <Link to="/" className="app__navbar-logo">
+      <Link onClick={()=> handleClick(0)} to="/" className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
       </Link>
       <div className="app__navbar-list">

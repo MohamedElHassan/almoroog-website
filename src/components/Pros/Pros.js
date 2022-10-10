@@ -2,8 +2,8 @@ import React from "react";
 import { GiCardPickup, GiCargoShip, GiStorkDelivery } from "react-icons/gi";
 import { FaRegHandPointUp } from "react-icons/fa";
 
-import "./Pros.scss";
 import { AppWrapper } from "../../wrapper";
+import "./Pros.scss";
 const Pros = () => {
   return (
     <div className="app__pros section__margin">
@@ -42,12 +42,12 @@ const Pros = () => {
       </div>
       <div className="app__pros-description">
         <div className="app__pros-text1">
-        <span className="circle">01</span>
+          <span className="circle">01</span>
           <p>احجز شحنتك عبر الرقم المجاني</p>
         </div>
 
         <div className="app__pros-text2">
-        <span className="circle">02</span>
+          <span className="circle">02</span>
           <p>
             بعد الحجز ، سيتصل بك فريقنا في غضون 2-3 أيام لأستلام الشحنة المراد
             إيصالها أظهر معرّفك الساري وادفع!
@@ -55,7 +55,7 @@ const Pros = () => {
         </div>
 
         <div className="app__pros-text3">
-        <span className="circle">03</span>
+          <span className="circle">03</span>
           <p>
             لديك الحق في معرفة حالة شحنتك إلى أين وصلت، تحقق من موقعها الحالي
             وتتبعها.
@@ -63,8 +63,56 @@ const Pros = () => {
         </div>
 
         <div className="app__pros-text4">
-        <span className="circle">04</span>
+          <span className="circle">04</span>
           <p>
+            بمجرد تسليمها ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب منهم إرسال صورة
+            ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
+          </p>
+        </div>
+      </div>
+
+      {/* Mobile Version */}
+      <div className="app__pros-features-s">
+        <div className="app__pros-feature-s">
+          <h3>أحجز موعد معنا</h3>
+          <div className="feature-icons">
+            <span className="circle">01</span>
+            <FaRegHandPointUp />
+          </div>
+          <p>احجز شحنتك عبر الرقم المجاني أو عبر اموقع الإلكتروني الخاص بنا.</p>
+        </div>
+
+        <div className="app__pros-feature-s">
+          <h3>نستلم شحنتك</h3>
+          <div className="feature-icons">
+            <span className="circle">02</span>
+            <GiCardPickup />
+          </div>
+          <p>
+            بعد الحجز ، سيتصل بك فريقنا في غضون 2-3 أيام لأستلام الشحنة المراد
+            إيصالها أظهر معرّفك الساري وادفع!
+          </p>
+        </div>
+
+        <div className="app__pros-feature-s">
+          <h3>نغلف ونشحن</h3>
+          <div className="feature-icons">
+            <span className="circle">03</span>
+            <GiCargoShip />
+          </div>
+          <p>
+            لديك الحق في معرفة حالة شحنتك إلى أين وصلت، تحقق من موقعها الحالي
+            وتتبعها.
+          </p>
+        </div>
+
+        <div className="app__pros-feature-s">
+          <h3>نسلم شحنتك</h3>
+          <div className="feature-icons">
+            <span className="circle">04</span>
+            <GiStorkDelivery />
+          </div>
+          <p className="no-border">
             بمجرد تسليمها ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب منهم إرسال صورة
             ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
           </p>
