@@ -33,24 +33,25 @@ const Navbar = () => {
 
   const handleClick = (index) => {
     setActivePage(index);
-  }
+  };
   return (
     <div className="app__navbar">
-      <Link onClick={()=> handleClick(0)} to="/" className="app__navbar-logo">
+      <Link onClick={() => handleClick(0)} to="/" className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
       </Link>
       <div className="app__navbar-list">
         {menu.map((item, index) => (
           <div key={index} className="app__navbar-item">
-            <Link className={activePage === index ? 'active': ''} onClick={() => handleClick(index)} to={item.link}>{item.name}</Link>
+            <Link
+              className={activePage === index ? "active" : ""}
+              onClick={() => handleClick(index)}
+              to={item.link}
+            >
+              {item.name}
+            </Link>
           </div>
         ))}
-        <a
-          className="app__navbar-blog"
-          href="https://almoroojcargo.com/blog"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className="app__navbar-blog" href="https://almoroojcargo.com/blog">
           المدونة
         </a>
         <a className="app__navbar-btn" href="#">
@@ -77,7 +78,14 @@ const Navbar = () => {
             <div className="app__navbar-menu-items">
               {menu.map((item, index) => (
                 <div key={index} className="app__navbar-menu-item">
-                  <Link className={activePage === index ? 'active': ''} onClick={() => {handleClick(index); setToggleMenu(false)}} to={item.link}>
+                  <Link
+                    className={activePage === index ? "active" : ""}
+                    onClick={() => {
+                      handleClick(index);
+                      setToggleMenu(false);
+                    }}
+                    to={item.link}
+                  >
                     {item.name}
                   </Link>
                 </div>

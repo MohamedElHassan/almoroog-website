@@ -1,0 +1,80 @@
+.app__contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__contact-form-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 60%;
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    input {
+      font-family: "Tajawal", sans-serif;
+      width: 100%;
+      font-size: 16px;
+      padding: 1rem;
+      outline: none;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      font-family: "Tajawal", sans-serif;
+      width: 100%;
+      font-size: 16px;
+      padding: 1rem;
+      outline: none;
+      margin-bottom: 1rem;
+    }
+    button {
+      font-family: "Tajawal", sans-serif;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border: 3px solid var(--primary-color);
+      background-color: var(--primary-color);
+      color: #fff;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--black-color);
+      }
+      @media screen and(max-width:600px) {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  @media screen and(max-width:1100px) {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  @media screen and(max-width:900px) {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.message-sent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  font-size: 28px;
+  color: var(--secondary-color);
+}

@@ -82,3 +82,12 @@
     margin-bottom: 1rem;
   }
 }
+.message-sent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  font-size: 28px;
+  color: var(--secondary-color);
+}
