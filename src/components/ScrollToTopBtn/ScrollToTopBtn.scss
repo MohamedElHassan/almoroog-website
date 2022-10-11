@@ -4,7 +4,7 @@
   position: fixed;
   width: 45px;
   height: 45px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   bottom: 35px;
   left: 30px;
   border-radius: 10px;
@@ -20,7 +20,7 @@
   svg {
     width: 70%;
     height: 70%;
-    color: var(--white-color);
+    color: var(--secondary-color);
   }
   &.active {
     opacity: 1;

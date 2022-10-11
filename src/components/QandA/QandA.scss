@@ -71,18 +71,18 @@
   }
 }
 .accordion-item {
-  border: 1px solid var(--primary-color);
-  background-color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
   margin-bottom: 5px;
   padding: 10px 20px;
   border-radius: 0.5rem;
   .title {
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    color: var(--primary-color);
+    color: var(--white-color);
 
     cursor: pointer;
     // h2 {
@@ -95,7 +95,7 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 38px;
-    color: #cc8f16;
+    color: var(--secondary-color);
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);

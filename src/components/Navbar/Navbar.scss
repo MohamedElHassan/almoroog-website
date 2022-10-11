@@ -6,11 +6,14 @@
   padding: 0.5rem 5rem;
   // 550px
   @media screen and(max-width:600px) {
-    padding: 0.5rem 3.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 4rem;
+    padding-left: 2.3rem;
   }
 }
 .app__navbar-logo {
-  width: 150px;
+  width: 140px;
   height: 90px;
 
   img {
@@ -42,7 +45,7 @@
       }
     }
   }
-  @media screen and(max-width:1163px) {
+  @media screen and(max-width:1237px) {
     display: none;
   }
   .app__navbar-blog {
@@ -78,7 +81,7 @@
 .app__navbar-menu {
   cursor: pointer;
 
-  @media screen and(min-width:1163px) {
+  @media screen and(min-width:1237px) {
     display: none;
   }
   //   &.active span:nth-child(2) {

@@ -40,31 +40,36 @@ const ContactForm = () => {
           تم إرسال رسالتك بنجاح, سوف نرد عليك في اسرع وقت
         </h2>
       ) : (
-        <div className="app__contact-form section__padding section__margin">
+        <div className="app__contact-form">
           <div className="app__contact-form-form">
-            <h2 className="app__contact-form-form-title">ارسل لنا رسالة</h2>
+            <h2 className="app__contact-form-form-title">أرسل طلب شحن</h2>
             <form ref={form} onSubmit={sendEmail} className="contact-us-form">
-              <input type="text" placeholder="اسمك" name="user_name" required />
               <input
-                type="email"
-                placeholder="البريد الإلكتروني"
-                name="user_email"
+                type="text"
+                placeholder="رقم الجوال"
+                name="user_phone"
                 required
               />
               <input
                 type="text"
-                placeholder="الموضوع"
-                name="subject"
+                placeholder="نوع الشحنة"
+                name="cargo_type"
                 required
               />
-              <textarea
-                name="message"
-                cols="30"
-                rows="10"
-                placeholder="اكتب رسالتك"
-              ></textarea>
+              <input
+                type="text"
+                placeholder="عنوان إستلام الشحنة"
+                name="cargo_receive_location"
+                required
+              />
+              <input
+                type="text"
+                placeholder="عنوان تسليم الشحنة"
+                name="cargo_send_location"
+                required
+              />
               <button type="submit">
-                {loading ? "جاري الإرسال" : "إرسل رسالتك"}
+                {loading ? "جاري الإرسال" : "أرسل الطلب"}
               </button>
             </form>
           </div>
