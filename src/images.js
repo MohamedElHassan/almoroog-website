@@ -3,6 +3,10 @@ import logo2 from "./assets/logo2.png";
 import logo3 from "./assets/logo3.png";
 import iconDelivery from "./assets/icon-delivery-white.png";
 import iconDeliveryYellow from "./assets/icon-delivery-yellow.png";
+import services1 from "./assets/services (4).png";
+import services2 from "./assets/services (3).png";
+import services3 from "./assets/services (2).png";
+import services4 from "./assets/services (1).png";
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
 import card3 from "./assets/card3.jpg";
@@ -43,6 +47,10 @@ export default {
   logo3,
   iconDelivery,
   iconDeliveryYellow,
+  services1,
+  services2,
+  services3,
+  services4,
   card1,
   card2,
   card3,

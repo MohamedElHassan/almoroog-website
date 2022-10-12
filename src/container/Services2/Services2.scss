@@ -10,11 +10,11 @@
   flex-direction: row-reverse;
   @media screen and (max-width: 1150px) {
     flex-direction: column;
+    display: none;
   }
   @media screen and (max-width: 730px) {
     padding: 1rem 1rem 4rem;
     margin: 4rem 1rem;
-
   }
 }
 
@@ -257,5 +257,27 @@
   }
   @media screen and (max-width: 730px) {
     width: 100%;
+  }
+}
+
+.app__services2-m {
+  background-color: var(--gray-color);
+  padding: 4rem 2rem;
+  margin: 4rem 2rem;
+  border-radius: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  @media screen and (min-width: 1150px) {
+    display: none;
+  }
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 730px) {
+    padding: 1rem 1rem 4rem;
+    margin: 4rem 1rem;
   }
 }
