@@ -33,7 +33,7 @@ const menu = [
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
-      top: 110,
+      top: 0,
       behavior: "smooth",
     });
   };

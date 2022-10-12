@@ -36,12 +36,14 @@
       font-size: 20px;
       text-decoration: none;
       color: var(--white-color);
+      font-weight: 500;
       transition: all 0.3s ease-in-out;
       &:hover {
         color: var(--secondary-color);
       }
       &.active {
         color: var(--secondary-color);
+        font-size: 22px;
       }
     }
   }
@@ -168,6 +170,7 @@
 
     a {
       font-size: 22px;
+      font-weight: 500;
       text-decoration: none;
       color: var(--white-color);
       transition: all 0.3s ease-in-out;
@@ -176,6 +179,7 @@
       }
       &.active {
         color: var(--secondary-color);
+        font-size: 25px;
       }
     }
   }

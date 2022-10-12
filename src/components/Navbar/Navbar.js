@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import { GrClose } from "react-icons/gr";
 
 import images from "../../images";
@@ -27,26 +27,35 @@ const menu = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = (props) => {
   // فكرة الناف بار الجديد : هنشوف ال URL فوق بيأشر لفين ومنها نغير اللون المحدد
-  const [activePage, setActivePage] = useState(0);
+  const location = useLocation();
+  const { pathname } = location;
+
+  const [activePage, setActivePage] = useState(pathname);
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleClick = (index) => {
-    setActivePage(index);
-  };
+  useEffect(() => {
+    // runs on location, i.e. route, change
+    console.log("handle route change here", pathname);
+    setActivePage(pathname);
+  }, [pathname]);
+
+  // const handleClick = (index) => {
+  //   setActivePage(index);
+  // };
   return (
     <div className="app__navbar">
-      <Link onClick={() => handleClick(0)} to="/" className="app__navbar-logo">
+      <Link to="/" className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
       </Link>
       <div className="app__navbar-list">
         {menu.map((item, index) => (
           <div key={index} className="app__navbar-item">
             <Link
-              className={activePage === index ? "active" : ""}
+              className={activePage === item.link ? "active" : ""}
               // className={urlCheck === item.link ? "active" : ""}
-              onClick={() => handleClick(index)}
+              // onClick={() => handleClick(index)}
               to={item.link}
             >
               {item.name}
@@ -81,9 +90,9 @@ const Navbar = () => {
               {menu.map((item, index) => (
                 <div key={index} className="app__navbar-menu-item">
                   <Link
-                    className={activePage === index ? "active" : ""}
+                    className={activePage === item.link ? "active" : ""}
                     onClick={() => {
-                      handleClick(index);
+                      // handleClick(index);
                       setToggleMenu(false);
                     }}
                     to={item.link}
@@ -95,8 +104,6 @@ const Navbar = () => {
               <a
                 className="app__navbar-blog"
                 href="https://almoroojcargo.com/blog"
-                target="_blank"
-                rel="noreferrer"
               >
                 المدونة
               </a>
