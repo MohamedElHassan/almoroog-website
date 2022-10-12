@@ -1,6 +1,8 @@
 import logo from "./assets/logo.png";
 import logo2 from "./assets/logo2.png";
 import logo3 from "./assets/logo3.png";
+import iconDelivery from "./assets/icon-delivery-white.png";
+import iconDeliveryYellow from "./assets/icon-delivery-yellow.png";
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
 import card3 from "./assets/card3.jpg";
@@ -39,6 +41,8 @@ export default {
   logo,
   logo2,
   logo3,
+  iconDelivery,
+  iconDeliveryYellow,
   card1,
   card2,
   card3,

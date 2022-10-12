@@ -28,6 +28,7 @@ const menu = [
 ];
 
 const Navbar = () => {
+  // فكرة الناف بار الجديد : هنشوف ال URL فوق بيأشر لفين ومنها نغير اللون المحدد
   const [activePage, setActivePage] = useState(0);
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -44,6 +45,7 @@ const Navbar = () => {
           <div key={index} className="app__navbar-item">
             <Link
               className={activePage === index ? "active" : ""}
+              // className={urlCheck === item.link ? "active" : ""}
               onClick={() => handleClick(index)}
               to={item.link}
             >

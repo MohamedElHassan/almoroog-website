@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Heading,
+  // Heading,
   Cards,
   QandA,
   ScrollToTopBtn,
@@ -10,7 +10,9 @@ import {
   ContactForm,
   Prices,
 } from "./components";
-import { Header, Services, Services2 } from "./container";
+import { Header, 
+  // Services,
+   Services2 } from "./container";
 import { Route, Routes } from "react-router-dom";
 import { WhoWeAre, ServicesPage, ContactUs, ErrorPage } from "./pages";
 import Layout from "./pages/Layout";

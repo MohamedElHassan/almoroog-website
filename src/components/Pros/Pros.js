@@ -3,6 +3,7 @@ import { GiCardPickup, GiCargoShip, GiStorkDelivery } from "react-icons/gi";
 import { FaRegHandPointUp } from "react-icons/fa";
 
 import { AppWrapper } from "../../wrapper";
+import images from "../../images";
 import "./Pros.scss";
 const Pros = () => {
   return (
@@ -34,7 +35,7 @@ const Pros = () => {
 
         <div className="app__pros-feature">
           <div className="icon">
-            <GiStorkDelivery />
+            <img src={images.iconDelivery} alt="delivery-icon" />
           </div>
           <h3>نسلم</h3>
           <p>لا تفوت لحظة</p>
@@ -110,7 +111,7 @@ const Pros = () => {
           <h3>نسلم شحنتك</h3>
           <div className="feature-icons">
             <span className="circle">04</span>
-            <GiStorkDelivery />
+            <img src={images.iconDeliveryYellow} alt="delivery-icon" />
           </div>
           <p className="no-border">
             بمجرد تسليمها ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب منهم إرسال صورة
