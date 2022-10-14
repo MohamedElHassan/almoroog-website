@@ -44,30 +44,43 @@ const ContactForm = () => {
           <div className="app__contact-form-form">
             <h2 className="app__contact-form-form-title">أرسل طلب شحن</h2>
             <form ref={form} onSubmit={sendEmail} className="contact-us-form">
-              <input
-                type="text"
-                placeholder="رقم الجوال"
-                name="user_phone"
-                required
-              />
-              <input
-                type="text"
-                placeholder="نوع الشحنة"
-                name="cargo_type"
-                required
-              />
-              <input
-                type="text"
-                placeholder="عنوان إستلام الشحنة"
-                name="cargo_receive_location"
-                required
-              />
-              <input
-                type="text"
-                placeholder="عنوان تسليم الشحنة"
-                name="cargo_send_location"
-                required
-              />
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="رقم الجوال"
+                  name="user_phone"
+                  required
+                />
+                <span>رقم الجوال</span>
+              </div>
+
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="نوع الشحنة"
+                  name="cargo_type"
+                  required
+                />
+                <span>نوع الشحنة</span>
+              </div>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="عنوان إستلام الشحنة"
+                  name="cargo_receive_location"
+                  required
+                />
+                <span>عنوان إستلام الشحنة</span>
+              </div>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="عنوان تسليم الشحنة"
+                  name="cargo_send_location"
+                  required
+                />
+                <span>عنوان تسليم الشحنة</span>
+              </div>
               <button type="submit">
                 {loading ? "جاري الإرسال" : "أرسل الطلب"}
               </button>
