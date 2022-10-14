@@ -70,15 +70,15 @@
       color: var(--secondary-color);
     }
   }
-  a:last-of-type {
-    margin-right: 2rem;
-    background-color: transparent;
-    color: var(--white-color);
-    &:hover {
-      background-color: #e71111;
-      color: var(--secondary-color);
-    }
-  }
+  // a:last-of-type {
+  //   margin-right: 2rem;
+  //   background-color: transparent;
+  //   color: var(--white-color);
+  //   &:hover {
+  //     background-color: #e71111;
+  //     color: var(--secondary-color);
+  //   }
+  // }
   @media screen and(max-width:800px) {
     flex-direction: column;
     a {
@@ -86,9 +86,9 @@
       height: 62px;
       font-size: 19px;
     }
-    a:last-of-type {
-      margin-right: 0;
-    }
+    // a:last-of-type {
+    //   margin-right: 0;
+    // }
   }
   @media screen and(max-width:450px) {
     a {

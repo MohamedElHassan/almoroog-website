@@ -1,6 +1,6 @@
 import React from "react";
 import { GiCardPickup, GiCargoShip, GiStorkDelivery } from "react-icons/gi";
-import { FaRegHandPointUp } from "react-icons/fa";
+import { FaRegHandPointUp, FaTruck } from "react-icons/fa";
 
 import { AppWrapper } from "../../wrapper";
 import images from "../../images";
@@ -22,12 +22,12 @@ const Pros = () => {
             <GiCardPickup />
           </div>
           <h3>نستلم</h3>
-          <p>شحنتك تسحتق الأعتناء بها</p>
+          <p>نستلم شحنتك اينما كنت</p>
         </div>
 
         <div className="app__pros-feature">
           <div className="icon">
-            <GiCargoShip />
+            <FaTruck />
           </div>
           <h3>نشحن</h3>
           <p>كن على علم بكل خطوة</p>
@@ -50,8 +50,8 @@ const Pros = () => {
         <div className="app__pros-text2">
           <span className="circle">02</span>
           <p>
-            بعد الحجز ، سيتصل بك فريقنا في غضون 2-3 أيام لأستلام الشحنة المراد
-            إيصالها أظهر معرّفك الساري وادفع!
+            بعد الحجز ، سيتصل بك فريقنا المختص في غضون ساعات لترتيب موعد لإستلام
+            الشحنة!
           </p>
         </div>
 
@@ -66,8 +66,8 @@ const Pros = () => {
         <div className="app__pros-text4">
           <span className="circle">04</span>
           <p>
-            بمجرد تسليمها ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب منهم إرسال صورة
-            ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
+            بمجرد تسليم الشحنة الى احبائك ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب
+            منهم إرسال صورة ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
           </p>
         </div>
       </div>
@@ -90,8 +90,8 @@ const Pros = () => {
             <GiCardPickup />
           </div>
           <p>
-            بعد الحجز ، سيتصل بك فريقنا في غضون 2-3 أيام لأستلام الشحنة المراد
-            إيصالها أظهر معرّفك الساري وادفع!
+            بعد الحجز ، سيتصل بك فريقنا المختص في غضون ساعات لترتيب موعد لإستلام
+            الشحنة!
           </p>
         </div>
 
@@ -114,8 +114,8 @@ const Pros = () => {
             <img src={images.iconDeliveryYellow} alt="delivery-icon" />
           </div>
           <p className="no-border">
-            بمجرد تسليمها ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب منهم إرسال صورة
-            ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
+            بمجرد تسليم الشحنة الى احبائك ، لا تفوت رؤية ابتسامتهم السعيدة. اطلب
+            منهم إرسال صورة ثم شاركها معنا، نحن متحمسون لرؤيتها أيضًا.
           </p>
         </div>
       </div>

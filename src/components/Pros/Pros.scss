@@ -13,6 +13,9 @@
   justify-content: space-around;
   align-items: center;
 
+  margin: auto;
+  width: 80%;
+
   border-radius: 70px;
   padding: 3rem 0 5rem;
   background-color: var(--primary-color);
@@ -54,7 +57,7 @@
   }
   p {
     color: var(--white-color);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     line-height: 31px;
     text-align: center;
@@ -65,12 +68,14 @@
   justify-content: space-between;
   align-items: center;
 
+  width: 80%;
+  margin: auto;
   div {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 4rem 2rem;
+    padding: 3rem 1rem;
     width: 25%;
     height: 250px;
 
@@ -96,8 +101,8 @@
 
   p {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 31px;
+    font-size: 17px;
+    line-height: 29px;
   }
   @media screen and (max-width: 1000px) {
     display: none;
@@ -200,12 +205,17 @@
     margin-bottom: 1.5rem;
   }
   p {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 31px;
 
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
+
+    @media screen and (max-width: 550px) {
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
 }
 .no-border {

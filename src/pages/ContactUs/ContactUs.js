@@ -70,7 +70,7 @@ const ContactUs = () => {
           <iframe
             className="google-map-location"
             title="google-map-location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.1704559455675!2d31.15804631040457!3d29.388496391408385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145996b2e596fb31%3A0x4e40510ec2a57ea3!2z2YfYsdmFINmF2YrYr9mI2YU!5e0!3m2!1sar!2seg!4v1664367627522!5m2!1sar!2seg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.1856125997706!2d55.44246028498635!3d25.398596783802965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3844890532331d5!2zMjXCsDIzJzU1LjAiTiA1NcKwMjYnMjUuMCJF!5e0!3m2!1sar!2seg!4v1665697010407!5m2!1sar!2seg"
             // width="600"
             // height="450"
             style={{ border: 0 }}

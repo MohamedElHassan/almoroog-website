@@ -21,7 +21,7 @@ const cardsData = [
     image: images.card3,
     title: "شحن سريع",
     content:
-      "برغم المشاكل الكثيرة التى تواجة الحركة اللوجستية على المستوى العالمي، إلى أننا في المروج نعمل على توفير جميع السبل الممكنة المطلوبة لضمان وصول شحنتك بأسرع وقت ممكن، للك كن على ثقة من أن شحنتك ستصل في الموعد المحدد لها بل في أغلب الأحيان قبل الموعد المحدد.",
+      "برغم المشاكل الكثيرة التى تواجة الحركة اللوجستية على المستوى العالمي، إلى أننا في المروج نعمل على توفير جميع السبل الممكنة المطلوبة لضمان وصول شحنتك بأسرع وقت ممكن، لتكن على ثقة من أن شحنتك ستصل في الموعد المحدد لها بل في أغلب الأحيان قبل الموعد المحدد.",
   },
   {
     image: images.card4,
@@ -44,42 +44,61 @@ const cardsData = [
 ];
 
 const Cards = () => {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef();
+  // const [width, setWidth] = useState(0);
+  // const carousel = useRef();
 
-  useEffect(() => {
-    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+  // useEffect(() => {
+  //   // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  // }, []);
 
   return (
+    // <div className="app__cards">
+    //   <div className="section__heading">
+    //     <h2>لماذا نحن؟</h2>
+    //   </div>
+    //   <motion.div
+    //     ref={carousel}
+    //     className="carousel"
+    //     whileTap={{ cursor: "grabbing" }}
+    //   >
+    //     <motion.div
+    //       drag="x"
+    //       dragConstraints={{ left: 0, right: width }}
+    //       className="inner-carousel"
+    //     >
+    //       {cardsData.map((card) => {
+    //         return (
+    //           <motion.div className="item" key={card.title}>
+    //             <div className="item-content">
+    //               <h2>{card.title}</h2>
+    //               <p>{card.content}</p>
+    //             </div>
+    //             <img src={card.image} alt={card.title} />
+    //           </motion.div>
+    //         );
+    //       })}
+    //     </motion.div>
+    //   </motion.div>
+    // </div>
+
     <div className="app__cards">
       <div className="section__heading">
         <h2>لماذا نحن؟</h2>
       </div>
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-      >
-        <motion.div
-          drag="x"
-          dragConstraints={{ left: 0, right: width }}
-          className="inner-carousel"
-        >
-          {cardsData.map((card) => {
-            return (
-              <motion.div className="item" key={card.title}>
-                <div className="item-content">
-                  <h2>{card.title}</h2>
-                  <p>{card.content}</p>
-                </div>
-                <img src={card.image} alt={card.title} />
-              </motion.div>
-            );
-          })}
-        </motion.div>
-      </motion.div>
+      <div className="cards-container">
+        {cardsData.map((card) => {
+          return (
+            <div className="item" key={card.title}>
+              <div className="item-content">
+                <h2>{card.title}</h2>
+                <p>{card.content}</p>
+              </div>
+              <img src={card.image} alt={card.title} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
