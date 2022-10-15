@@ -105,7 +105,7 @@
     color: var(--black-color);
     font-weight: 300;
     &:focus ~ span,
-    &:valid ~ span { 
+    &:valid ~ span {
       transform: translateX(10px) translateY(-34px);
       font-size: 12px;
     }

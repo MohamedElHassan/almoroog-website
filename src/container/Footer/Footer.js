@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-contact-phone">
           <BsFillTelephoneFill />
-          <a href="tel:+971582881365">+971582881365</a>
+          <a href="tel:0555019360">0555019360</a>
         </div>
         <div className="app__footer-contact-mail">
           <HiMail />

@@ -13,7 +13,7 @@ const Pros = () => {
           <div className="icon">
             <FaRegHandPointUp />
           </div>
-          <h3>أحجز</h3>
+          <h3>إتصل بنا</h3>
           <p>أحجز موعد معنا</p>
         </div>
 
@@ -22,7 +22,7 @@ const Pros = () => {
             <GiCardPickup />
           </div>
           <h3>نستلم</h3>
-          <p>نستلم شحنتك اينما كنت</p>
+          <p>نستلم شحنتك أينما كنت في الإمارات</p>
         </div>
 
         <div className="app__pros-feature">
@@ -44,7 +44,10 @@ const Pros = () => {
       <div className="app__pros-description">
         <div className="app__pros-text1">
           <span className="circle">01</span>
-          <p>احجز شحنتك عبر الرقم المجاني</p>
+          <p>
+            يمكنك الإتصال بنا لحجز موعد لإستلام شحنتك عبر رقمنا الموحد
+            0555019360
+          </p>
         </div>
 
         <div className="app__pros-text2">
@@ -75,12 +78,15 @@ const Pros = () => {
       {/* Mobile Version */}
       <div className="app__pros-features-s">
         <div className="app__pros-feature-s">
-          <h3>أحجز موعد معنا</h3>
+          <h3>إتصل بنا</h3>
           <div className="feature-icons">
             <span className="circle">01</span>
             <FaRegHandPointUp />
           </div>
-          <p>احجز شحنتك عبر الرقم المجاني أو عبر اموقع الإلكتروني الخاص بنا.</p>
+          <p>
+            يمكنك الإتصال بنا لحجز موعد لإستلام شحنتك عبر رقمنا الموحد
+            0555019360
+          </p>
         </div>
 
         <div className="app__pros-feature-s">

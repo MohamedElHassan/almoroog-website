@@ -58,7 +58,7 @@ const Header = () => {
               بها لأقصى درجة، لتصل لأحبائك كما تحب أن يراوها.
             </p>
             <div className="contact-btns">
-              <a href="tel:+971582881365">إتصل بنا</a>
+              <a href="tel:0555019360">إتصل بنا</a>
             </div>
           </div>
         </Overlay>

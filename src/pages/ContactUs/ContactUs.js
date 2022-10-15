@@ -41,25 +41,44 @@ const ContactUs = () => {
           <div className="app__contact-us-form">
             <h2 className="app__contact-us-form-title">ارسل لنا رسالة</h2>
             <form ref={form} onSubmit={sendEmail} className="contact-us-form">
-              <input type="text" placeholder="اسمك" name="user_name" required />
-              <input
-                type="email"
-                placeholder="البريد الإلكتروني"
-                name="user_email"
-                required
-              />
-              <input
-                type="text"
-                placeholder="الموضوع"
-                name="subject"
-                required
-              />
-              <textarea
-                name="message"
-                cols="30"
-                rows="10"
-                placeholder="اكتب رسالتك"
-              ></textarea>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="اسمك"
+                  name="user_name"
+                  required
+                />
+                <span>اسمك</span>
+              </div>
+
+              <div className="inputBox">
+                <input
+                  type="email"
+                  // placeholder="البريد الإلكتروني"
+                  name="user_email"
+                  required
+                />
+                <span>البريد الإلكتروني</span>
+              </div>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  // placeholder="الموضوع"
+                  name="subject"
+                  required
+                />
+                <span>الموضوع</span>
+              </div>
+              <div className="inputBox-textarea">
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  required
+                  // placeholder="اكتب رسالتك"
+                ></textarea>
+                <span>اكتب رسالتك</span>
+              </div>
               <button type="submit">
                 {loading ? "جاري الإرسال" : "إرسل رسالتك"}
               </button>
